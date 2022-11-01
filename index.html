@@ -6,36 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerveza artsenal</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body class="body">
-    <header class="Lataberna">La Taberna</header>
-    <navbar class="navegador">
-        <ul>
-        <li><a href="default.asp">Bebidas</a></li>
-        <li><a href="news.asp">Picadas</a></li>
-        <li><a href="contact.asp">Ubicacion</a></li>
-        <li><a href="about.asp">About</a></li>
+<body class="container" style="background-color:black">
+        <header>
+        <img src="./img/logo.jpg"  class="rounded-circle" height="150px" width="200px" >
+<span class="Lataberna" style="background-color:darkslategray">La Taberna </span> 
+        </header> 
+    <nav>
+        <ul class="navbar">
+        <div><li><a href="#">Bebidas</a></li></div>
+        <div><li><a href="#">Picadas</a></li></div>
+        <div><li><a href="#">Ubicacion</a></li></div>
+        <div><li><a href="#">Sobre nosotros</a></li></div>
       </ul>
-    </navbar>
+    </nav>
+</header>
     <h1 class="cerveza">Cerveza artesanal</h1>
+    <h2>Nuestras variedades</h2>
     <section>
-        <p class="parrafo"> <img class="img" src="./img/vaso amber.webp" alt="vaso con cerveza" align="left"><strong>American Amber Ale</strong> Cerveza artesanal americana de color ámbar, lupulada, de intensidad moderada, con un sabor maltoso a caramelo.
-              El balance puede variar un poco, con algunas versiones siendo bastante maltosas y otras pueden ser agresivamente lupuladas.
-            Las versiones lupuladas y amargas no deberían entrar en conflicto con los sabores a caramelo del perfil de la malta.</p>
-       
-        </section>
+        <div class="flex-container">
+        <div class="row">
+            <div class="col-sm-4" style="background-color: darkslategrey"><p class="Amber"> <img class="imga" src="./img/vaso amber.webp" alt="vaso con cerveza"><strong>American Amber</strong> Americana de color ámbar, lupulada, de intensidad moderada, con un sabor maltoso a caramelo.</p></div>
+            <div class="col-sm-4" style="background-color: darkslategrey"><p class="Golden"> <img class="imgg" src="./img/golden2.jpg" alt="cerveza dorada"><strong>Golden Ale</strong> Rubia de estilo ingles, color dorado y excelente cuerpo gracias a la combinación de maltas pálidas y maltas acarameladas.</p></div>
+            <div class="col-sm-4" style="background-color: darkslategrey"><p class="Porter"> <img class="imgp" src="./img/porter.jpg" alt="cerveza negra"><strong>Porter</strong> Cerveza ligera y oscura, con sabores tostados, notas a chocolate / café, amargor moderado, sabor intenso, donde se destaca la malta y el lúpulo</p></div> 
+            </div>
+            </div>
+         </section>
+
+        
     <form action="/action_page.php" target="_blank" method="get" class="formulario">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="Nombre" name="Nombre"><br>
+        <label for="nombre">Cerveza:</label><br>
+        <input type="radio" id="Cerveza" name="Cerveza" value="Amber"> American Amber<br>
+        <input type="radio" id="Cerveza" name="Cerveza" value="Golden"> Golden Ale<br>
+        <input type="radio" id="Cerveza" name="Cerveza" value="Porter"> Porter<br>
         <label for="nro de mesa">Nro de mesa:</label><br>
         <input type="text" id="Nro de mesa" name="Nro de mesa"><br>
         <label for="cantidad">Cantidad:</label><br>
         <input type="text" id="Cantidad" name="Cantidad"><br>
         <input type="submit" value="Pedir">
     </form>
+
     <footer class="footer">
         <p>La taberna- Maipu 1227, Santa Fe, Argetina</p>
         <p>wtp: 342-4895623</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,35 +1,75 @@
-.body {
-    background-color: #eee8aa;
+.container {
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .Lataberna {
-    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 75px;
-  border: 5px solid black;
-}
-
-.cerveza {
-    margin-left: 25px;
 }
 
 
-.img {
-    width: 250px;
-    height: 250px;
-    display: inline-block;
-    padding-right: 10px;
+.imga {
+    width: 270px;
+    height: 270px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    }
+
+    .Amber {
+        margin: 10px 10px 10px 10px;
+        }
+
+.imgg {
+        width: 270px;
+        height: 275px;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
+    }
+
+ .Golden {
+        margin: 10px 10px 10px 10px;
+        }
+
+.imgp {
+    width: 270px;
+    height: 275px;
+    padding: 10px 10px 10 px 10px;
+    margin: 10px 10px 10px 10px;
    }
 
-.parrafo {
-    margin-bottom: 200px;
-    margin-right: 75px;
+   .Porter {
+    margin: 10px 10px 10px 10px;
+    }
+
+.formulario {
+    padding-top: 25px;
+    margin-top: 20px;
     margin-left: 25px;
-}
+   }
    
-   .formulario {
-    margin-left: 25px;
-   }
 .footer {
     text-align: center;
     font-size: small;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block ;
+    flex-direction: row;
+    justify-content: left;
+    margin: 10px;
+    padding: 10px;
+ }
+
+.formulario {
+    display: inline;
+    text-align: left;
 }
